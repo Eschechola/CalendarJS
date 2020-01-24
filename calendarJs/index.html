@@ -1,0 +1,53 @@
+<html>
+
+<!DOCTYPE html>
+<head>
+    <title>CalendarJS - Lucas Eschechola</title>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+    <script src="calendar.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="box-calendar">
+            <div class="calendar">
+                <div class="row">
+                    <p id="previewMonth" onclick="PreviewMonth()">&nbsp; < &nbsp;</p> <p id="month">janeiro</p>
+                    <p id="nextMonth" onclick="NextMonth()">&nbsp; > &nbsp;</p>
+                </div>
+
+                <br />
+
+                <table id="daysCalendar">
+                    <thead>
+                        <tr>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sab</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendarDays">
+
+                    </tbody>
+                </table>
+
+                <br />
+
+                <center>
+                    <div id="year">
+
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

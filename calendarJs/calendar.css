@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background: #fafafa;
+}
+
+/* CALENDAR */
+
+.box-calendar {
+    width: 20%;
+    height: 450px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    display: flex;
+    align-content: center !important;
+    justify-content: center !important;
+}
+    
+
+.calendar {
+    flex: 1;
+    height: 100%;
+    margin: 0%;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #f3f3f3;
+}
+
+th{
+    padding: 10px;
+    border: 1px solid lightgray;
+    
+}
+
+td{
+    border: 1px solid lightgray;
+}
+
+#previewMonth {
+    font-family: Arial;
+    font-size: 20px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+#previewMonth:hover {
+    background: #f3f3f3;
+    transition: 0.5s;
+}
+
+#previewMonth::selection {
+    background: transparent;
+}
+
+#nextMonth {
+    font-family: Arial;
+    font-size: 20px;
+    float: left;
+    margin-left: 15%;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px !important;
+}
+
+#nextMonth::selection {
+    background: transparent;
+}
+
+
+#nextMonth:hover {
+    background: #f3f3f3;
+    transition: 0.5s;
+    
+}
+
+#month {
+    font-family: Arial;
+    float: left;
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 5%;
+    transform: translateX(-50%);
+    width: 20%;
+    text-align: center;
+}
+
+#daysCalendar{
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#daysCalendar td{
+   padding: 10px;
+   text-align: center;
+   cursor: pointer;
+
+}
+
+#daysCalendar th{
+    text-align: center;
+}
+
+#calendarDays td {
+    transition: 0.5s;
+}
+
+#calendarDays td:hover {
+    background: #f3f3f3;
+    transition: 0.5s;
+} 
+
+#today-day{
+    background: mediumseagreen;
+    padding: 0px;
+    border-radius: 2px;
+    color: white;
+}
+
+#year{
+    color: gray;
+}
