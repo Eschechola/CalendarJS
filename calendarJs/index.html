@@ -15,8 +15,8 @@
         <div class="box-calendar">
             <div class="calendar">
                 <div class="row">
-                    <p id="previewMonth" onclick="PreviewMonth()">&nbsp; < &nbsp;</p> <p id="month">janeiro</p>
-                    <p id="nextMonth" onclick="NextMonth()">&nbsp; > &nbsp;</p>
+                    <p id="previewMonth" onclick="PreviewMonth()">&nbsp; ◀ &nbsp;</p> <p id="month">janeiro</p>
+                    <p id="nextMonth" onclick="NextMonth()">&nbsp; ► &nbsp;</p>
                 </div>
 
                 <br />
@@ -40,11 +40,26 @@
 
                 <br />
 
-                <center>
-                    <div id="year">
+                <div class="year-content">
+                    <center>
+                        <p id="previewYear" onclick="PreviewYear()">&nbsp; ◀ &nbsp;</p>
+                        <div id="year" onclick="LoadAllPendents()" title="Exibir os últimos artigos agendados">
 
-                    </div>
-                </center>
+                        </div>
+                        <p id="nextYear" onclick="NextYear()">&nbsp; ► &nbsp;</p>
+                    </center>
+                </div>
+
+                <br />
+                <br />
+				
+				<section class="colors-functions">
+					<br>
+                    <span id="today-day-info">&nbsp;</span> - Data de hoje.
+                    
+                    <br>
+                    <div id="selected-day-info">&nbsp;</div> - Data selecionada.
+                </section>
             </div>
         </div>
     </div>

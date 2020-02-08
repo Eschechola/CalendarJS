@@ -8,19 +8,31 @@ body{
     background: #fafafa;
 }
 
-/* CALENDAR */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
+body{
+    background: #fafafa;
+}
+
+/* CALENDAR */
 .box-calendar {
     width: 20%;
-    height: 450px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10%;
+    height: 600px;
+    margin-left: 2.5%;
+    float: left;
     display: flex;
     align-content: center !important;
     justify-content: center !important;
-}
+	margin-left: 50%;
+	margin-top: 25%;
+	transform: translate(-50%, -50%);
     
+}
+
 
 .calendar {
     flex: 1;
@@ -29,16 +41,62 @@ body{
     background: white;
     border-radius: 3px;
     border: 2px solid #f3f3f3;
+    border-radius: 10px !important;
 }
 
-th{
-    padding: 10px;
-    border: 1px solid lightgray;
-    
+table{
+    border: 1px solid black;
+    border-spacing: 10px;
 }
 
-td{
-    border: 1px solid lightgray;
+.year-content{
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+}
+
+#previewYear {
+    font-family: Arial;
+    font-size: 20px;
+    float: left;
+    margin-top: 3%;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+    color: gray;
+}
+
+#previewYear:hover {
+    background: #f3f3f3;
+    transition: 0.5s;
+}
+
+#previewYear::selection {
+    background: transparent;
+}
+
+#nextYear {
+    font-family: Arial;
+    font-size: 20px;
+    float: left;
+    margin-top: 2.5%;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+    color: gray;
+    margin-left: 22.5%;
+}
+
+#nextYear:hover {
+    background: #f3f3f3;
+    transition: 0.5s;
+}
+
+#nextYear::selection {
+    background: transparent;
 }
 
 #previewMonth {
@@ -50,6 +108,7 @@ td{
     cursor: pointer;
     transition: 0.5s;
     border-radius: 5px;
+    color: gray;
 }
 
 #previewMonth:hover {
@@ -64,12 +123,13 @@ td{
 #nextMonth {
     font-family: Arial;
     font-size: 20px;
-    float: left;
-    margin-left: 15%;
+    float: right;
+	margin-left: 10%;
     margin-top: 5%;
     cursor: pointer;
     transition: 0.5s;
     border-radius: 5px !important;
+    color: gray;
 }
 
 #nextMonth::selection {
@@ -90,11 +150,11 @@ td{
     margin-left: 30%;
     margin-top: 5%;
     transform: translateX(-50%);
-    width: 20%;
-    text-align: center;
+    color: rgba(0,0,0,0.7);
 }
 
 #daysCalendar{
+    border: 1px solid #e8e8e8 !important;
     width: 90%;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -104,11 +164,12 @@ td{
    padding: 10px;
    text-align: center;
    cursor: pointer;
-
+   border: 1px solid #e8e8e8 !important;
 }
 
 #daysCalendar th{
     text-align: center;
+    color: rgba(0,0,0,0.7);
 }
 
 #calendarDays td {
@@ -118,15 +179,60 @@ td{
 #calendarDays td:hover {
     background: #f3f3f3;
     transition: 0.5s;
-} 
+}
 
-#today-day{
-    background: mediumseagreen;
+#today-day {
+    background: #2A2BC2;
     padding: 0px;
     border-radius: 2px;
     color: white;
 }
 
-#year{
+#year {
     color: gray;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px;
+    width: 30%;
+	float: left;
+	margin-left: 22.5%;
+    border-bottom: 1px solid lightgray;
 }
+
+#year:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.colors-functions{
+    border: 1px solid lightgray;
+    width: 90%;
+    height: 100px;
+    border-radius: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: dimgray;
+}
+
+#selected-day-info{
+    background: mediumseagreen;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 5px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#today-day-info {
+    background: #2A2BC2;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 5px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+
+/* CALENDAR - FIM */
