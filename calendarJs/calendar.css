@@ -215,7 +215,7 @@ table{
 }
 
 #selected-day-info{
-    background: mediumseagreen;
+    background: #fb8c00;
     width: 20px !important;
     height: 20px !important;
     border-radius: 5px;

@@ -156,18 +156,7 @@ function NextYear() {
 
 
 var daySelectedID = '';
-function SelectDay(){
-	
-if (urlGetAll == "" && date != "") {
-                // DEFINE O TITULO DA TABELA
-                var titleTable = document.getElementById('title-pendent').innerHTML = 'Artigos Agendados: ' + date.replace(/-/g, '/');
-
-            } else {
-                var titleTable = document.getElementById('title-pendent').innerHTML = 'Últimos Artigos Agendados';
-            }
-
-            var contentTable = document.getElementById('table-pendent').innerHTML = articleTable;
-
+function SelectDay(idSelected){
             //coloca uma cor no dia selecionado
             if (idSelected != "") {
                 if (daySelectedID != '') {
